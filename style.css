@@ -1,0 +1,112 @@
+body{
+    margin: 2%;
+    padding: 1.5em;
+    border: 3px solid #7c7c63;
+}
+
+header{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #faf3dd;
+   padding: 1.2em;
+}
+
+img{
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+}
+
+h1{
+    color: #7c7c63;
+    font-weight: 300;
+    font-size: 2.8em;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+h2, h3{
+    color: #7c7c63;
+    letter-spacing:1px;
+    font-family: sans-serif;
+}
+
+i{
+    color: #7c7c63;
+    padding:0.5em;
+}
+
+section{
+    display:grid;
+    grid-template: auto auto auto/ 50% 50% 2em;
+    grid-template-areas:
+    " about education"
+    " code skills "
+    " contacts languages";
+}
+
+.about{
+    grid-area: about;
+    padding-right: 10%;
+}
+
+.education{
+    grid-area:education;
+}
+
+.languages{
+    grid-area: languages;
+}
+
+.contacts{
+    grid-area:contacts;
+}
+
+.skills{
+    grid-area: skills;
+}
+
+.code p{
+    color: #7c7c63;
+    margin: 0;
+    font-size: 0.9em;
+    font-family: 'Space Mono', monospace;
+    padding:0.3em;
+}
+.code{
+    grid-area:code;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2720";
+    color: #7c7c63;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    color:#7c7c63;
+    font-size: 0.9em;
+    margin-left: 2em;
+}
+a {
+    width: 8%;
+    height:3%;
+
+}
+
+@media( max-width: 400px){
+    li, p, span {
+        font-size: 0.7em;
+    }
+}
